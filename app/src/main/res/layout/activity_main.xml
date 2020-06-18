@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity"
+    android:paddingBottom="3dp">
+   <androidx.drawerlayout.widget.DrawerLayout
+       android:id="@+id/drhome"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <androidx.appcompat.widget.Toolbar
+               android:id="@+id/toolbarmenu"
+               android:layout_width="match_parent"
+               android:layout_height="?attr/actionBarSize"
+               android:background="#14ABF5"
+               android:gravity="center"
+               app:title="H-Shop"
+               app:titleTextColor="#000">
+
+           </androidx.appcompat.widget.Toolbar>
+
+           <LinearLayout
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+               <ViewFlipper
+                   android:id="@+id/viewflqc"
+                   android:layout_width="match_parent"
+                   android:layout_height="160dp"/>
+
+               <LinearLayout
+                   android:background="#E7FAFF"
+                   android:orientation="vertical"
+                   android:layout_below="@+id/viewflqc"
+                   android:layout_above="@+id/menubt"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+                   <TextView
+                       android:fontFamily="@string/font_hshop"
+                       android:textSize="30sp"
+                       android:textColor="#FA3D03"
+                       android:gravity="center"
+                       android:text="Sản phẩm mới nhất"
+                       android:layout_below="@+id/viewflqc"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"/>
+                   <androidx.recyclerview.widget.RecyclerView
+                       android:background="#D8F5FA"
+                       android:id="@+id/recyclerhome"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+               </LinearLayout>
+           </LinearLayout>
+       </LinearLayout>
+       <com.google.android.material.navigation.NavigationView
+           android:id="@+id/menunavi"
+           android:layout_gravity="start"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <ListView
+               android:id="@+id/lstmenuhome"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"></ListView>
+
+       </com.google.android.material.navigation.NavigationView>
+   </androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+</LinearLayout>

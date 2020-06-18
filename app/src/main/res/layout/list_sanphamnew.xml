@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@null"
+    android:orientation="vertical">
+<androidx.cardview.widget.CardView
+    android:layout_margin="4dp"
+    app:cardCornerRadius="4dp"
+    android:id="@+id/cardspnew"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@drawable/new_new"
+            android:layout_gravity="top|right"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+
+                android:id="@+id/newimgsp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+
+                 />
+            <TextView
+                android:layout_marginBottom="3dp"
+                android:gravity="center"
+                android:text="tên sản phẩm"
+                android:textColor="#7E1137"
+                android:textSize="18sp"
+                android:id="@+id/newname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textStyle="italic"
+                android:fontFamily="@string/font_hshop"
+                android:background="@drawable/bg_prince"
+                android:textColor="#fff"
+                android:id="@+id/newgiasp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Giá sản phẩm"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+
+
+</LinearLayout>
